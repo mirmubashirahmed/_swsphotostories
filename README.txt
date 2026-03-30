@@ -1,7 +1,6 @@
 Photostories pack for GitHub Pages
 
 What changed from the Netlify version
-- netlify.toml removed
 - GitHub Pages workflow added at .github/workflows/pages.yml
 - .nojekyll added
 - build step still regenerates data/image-manifest.json from the images/ folders
@@ -20,13 +19,6 @@ How to use on GitHub Pages
 4. Commit and push.
 5. Wait for the Actions workflow to finish.
 6. Open your Pages URL.
-
-How to replace an existing repo with this pack
-- Delete the old netlify.toml if it is still in the repo.
-- Replace index.html, story.html, assets/, data/, images/, scripts/, package.json, README.txt.
-- Add the new .github/workflows/pages.yml file.
-- Add the .nojekyll file.
-- Commit all changes and push.
 
 Important
 - If you add or rename images later, commit and push again so the image manifest is rebuilt.
