@@ -1,0 +1,7 @@
+{
+  "name": "photostory-github-pages",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-image-manifest.mjs"
+  }
+}

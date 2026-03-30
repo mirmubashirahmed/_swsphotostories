@@ -1,0 +1,128 @@
+{
+  "clusters": [
+    {
+      "slug": "environment",
+      "en": "Environment",
+      "so": "Deegaan"
+    },
+    {
+      "slug": "livelihood",
+      "en": "Livelihood",
+      "so": "Nolol-maalmeed"
+    },
+    {
+      "slug": "community",
+      "en": "Community",
+      "so": "Bulsho"
+    }
+  ],
+  "districts": [
+    {
+      "slug": "baidoa",
+      "en": "Baidoa",
+      "so": "Baydhabo"
+    },
+    {
+      "slug": "barawe",
+      "en": "Barawe",
+      "so": "Barawy"
+    },
+    {
+      "slug": "hudur",
+      "en": "Hudur",
+      "so": "Xudur"
+    }
+  ],
+  "themes": [
+    {
+      "slug": "flooding",
+      "cluster": "environment",
+      "en": "Flooding",
+      "so": "Fatahaad"
+    },
+    {
+      "slug": "displacement",
+      "cluster": "environment",
+      "en": "Displacement",
+      "so": "Barakac"
+    },
+    {
+      "slug": "recovery",
+      "cluster": "environment",
+      "en": "Recovery",
+      "so": "Soo kabasho"
+    },
+    {
+      "slug": "drought",
+      "cluster": "livelihood",
+      "en": "Drought",
+      "so": "Abaar"
+    },
+    {
+      "slug": "mobility",
+      "cluster": "livelihood",
+      "en": "Mobility",
+      "so": "Socdaal"
+    },
+    {
+      "slug": "water-access",
+      "cluster": "community",
+      "en": "Water access",
+      "so": "Helitaanka biyo"
+    },
+    {
+      "slug": "care-work",
+      "cluster": "community",
+      "en": "Care work",
+      "so": "Daryeel"
+    },
+    {
+      "slug": "shared-space",
+      "cluster": "community",
+      "en": "Shared space",
+      "so": "Meel wadaag"
+    },
+    {
+      "slug": "fishing",
+      "cluster": "environment",
+      "en": "Fishing",
+      "so": "Kalluumaysi"
+    },
+    {
+      "slug": "weather",
+      "cluster": "environment",
+      "en": "Weather",
+      "so": "Cimilo"
+    },
+    {
+      "slug": "coast",
+      "cluster": "environment",
+      "en": "Coast",
+      "so": "Xeeb"
+    },
+    {
+      "slug": "routine",
+      "cluster": "community",
+      "en": "Routine",
+      "so": "Jadwal maalinle"
+    },
+    {
+      "slug": "agriculture",
+      "cluster": "livelihood",
+      "en": "Agriculture",
+      "so": "Beeraha"
+    },
+    {
+      "slug": "rain-timing",
+      "cluster": "livelihood",
+      "en": "Rain timing",
+      "so": "Waqtiga roobka"
+    },
+    {
+      "slug": "harvest",
+      "cluster": "livelihood",
+      "en": "Harvest",
+      "so": "Goosasho"
+    }
+  ]
+}

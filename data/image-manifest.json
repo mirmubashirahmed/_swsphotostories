@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-03-30T10:37:26.148Z",
+  "stories": {
+    "BD01": [
+      "images/BD01/1.jpg",
+      "images/BD01/2.jpg",
+      "images/BD01/3.jpg",
+      "images/BD01/4.jpg"
+    ],
+    "BD02": [
+      "images/BD02/1.jpg",
+      "images/BD02/2.jpg",
+      "images/BD02/3.jpg",
+      "images/BD02/4.jpg"
+    ],
+    "BD03": [
+      "images/BD03/1.jpg",
+      "images/BD03/2.jpg",
+      "images/BD03/3.jpg"
+    ],
+    "BD04": [
+      "images/BD04/1.jpg",
+      "images/BD04/2.jpg"
+    ],
+    "BD05": [
+      "images/BD05/1.jpg",
+      "images/BD05/2.jpg",
+      "images/BD05/3.jpg"
+    ],
+    "BD06": [
+      "images/BD06/1.jpg",
+      "images/BD06/2.jpg",
+      "images/BD06/3.jpg",
+      "images/BD06/4.jpg"
+    ],
+    "BW01": [
+      "images/BW01/1.jpg",
+      "images/BW01/2.jpg",
+      "images/BW01/3.jpg",
+      "images/BW01/4.jpg",
+      "images/BW01/5.jpg"
+    ],
+    "BW02": [
+      "images/BW02/1.jpg",
+      "images/BW02/2.jpg"
+    ],
+    "BW03": [
+      "images/BW03/1.jpg",
+      "images/BW03/2.jpg",
+      "images/BW03/3.jpg",
+      "images/BW03/4.jpg"
+    ],
+    "BW04": [
+      "images/BW04/1.jpg",
+      "images/BW04/2.jpg",
+      "images/BW04/3.jpg"
+    ],
+    "BW05": [
+      "images/BW05/1.jpg",
+      "images/BW05/2.jpg",
+      "images/BW05/3.jpg"
+    ],
+    "HD01": [
+      "images/HD01/1.jpg",
+      "images/HD01/2.jpg",
+      "images/HD01/3.jpg"
+    ],
+    "HD02": [
+      "images/HD02/1.jpg",
+      "images/HD02/2.jpg",
+      "images/HD02/3.jpg"
+    ],
+    "HD03": [
+      "images/HD03/1.jpg",
+      "images/HD03/2.jpg",
+      "images/HD03/3.jpg"
+    ],
+    "HD04": [
+      "images/HD04/1.jpg",
+      "images/HD04/2.jpg",
+      "images/HD04/3.jpg",
+      "images/HD04/4.jpg"
+    ],
+    "HD05": [
+      "images/HD05/1.jpg",
+      "images/HD05/2.jpg"
+    ]
+  }
+}

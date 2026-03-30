@@ -1,0 +1,348 @@
+{
+  "stories": [
+    {
+      "StoryCode": "BD01",
+      "District": "baidoa",
+      "Location": "Low-lying settlement",
+      "Date": "2025-01-14",
+      "Cluster": "environment",
+      "Themes": [
+        "flooding",
+        "displacement",
+        "recovery"
+      ],
+      "Themes_old": [
+        "flooding",
+        "movement"
+      ],
+      "Storyteller": "Hodan",
+      "StorySummary_SO": "Qoysas ka warramaya sida fatahaaddu u beddeshay socodka, shaqada, iyo nolol maalmeedka.",
+      "StorySummary_EN": "Families describe how floodwater changed movement, work, and daily routines.",
+      "Story_SO": "Sawir-qaaduhu wuxuu raacay qoysas ay fatahaaddu dib u habaysay nolol maalmeedkooda. Waddooyin ayaa luntay, shaqo ayaa gaabis noqotay, socodkuna wuxuu noqday gorgortan maalinle ah. Sawirrada waxaa loo sameeyey hal taxane halkii ay ka ahaan lahaayeen xog gooni ah.",
+      "Story_EN": "The photographer followed households whose routines were reorganised by floodwater. Paths disappeared, work slowed, and movement became a daily negotiation. The images were made as one sequence rather than as separate records.",
+      "StoryCommunity_SO": "Daawaduhu sawirradan uma arko oo keliya caddayn dhacdo weyn, balse wuxuu u akhriyaa sawir nololeed muujinaya la qabsasho soo noqnoqota. Waxa muuqda ma aha waxyeello oo keliya, balse sidoo kale waa shaqada deggan ee lagu dhaafayo maalmo caadi ah.",
+      "StoryCommunity_EN": "The community storyteller reads these pictures less as evidence of one dramatic event and more as a portrait of repeated adjustment. What stands out is not only damage, but the patient work of getting through ordinary days."
+    },
+    {
+      "StoryCode": "HD01",
+      "District": "hudur",
+      "Location": "Pastoral route",
+      "Date": "2025-01-18",
+      "Cluster": "livelihood",
+      "Themes": [
+        "drought",
+        "mobility",
+        "water-access"
+      ],
+      "Themes_old": [
+        "water",
+        "journey"
+      ],
+      "Storyteller": "Asha",
+      "StorySummary_SO": "Safarro sii dheeraanaya oo loogu raadinayo biyo iyo daaq ayaa noqday qayb ka mid ah sheekada qoyska.",
+      "StorySummary_EN": "Longer journeys for water and pasture have become part of one family’s daily story.",
+      "Story_SO": "Sawir-qaaduhu masaafadda lafteeda ayuu ka dhigay mawduuca. Biyaha, daaqa, iyo waqtigu way isku xiran yihiin, sawir kastana wuxuu ku laabanayaa isla dareenka yaraanta iyo adkaysiga.",
+      "Story_EN": "The photographer frames distance itself as the subject. Water, grazing, and time are bound together, and each image returns to the same sense of scarcity and endurance.",
+      "StoryCommunity_SO": "Daawaduhu wuxuu arkayaa in safarka laftiisu noqday sheekada, ee aanay ahayn meesha loo socdo oo keliya. Sawirradu way deggan yihiin, laakiin degganaantaas waxay siddaa culays, qorshayn, iyo daal.",
+      "StoryCommunity_EN": "The community storyteller notices how the journey becomes the story, not just the destination. The images feel quiet, but that quietness carries strain, planning, and fatigue."
+    },
+    {
+      "StoryCode": "BW01",
+      "District": "barawe",
+      "Location": "Shared courtyard",
+      "Date": "2025-01-22",
+      "Cluster": "community",
+      "Themes": [
+        "care-work",
+        "shared-space"
+      ],
+      "Themes_old": [
+        "maintenance"
+      ],
+      "Storyteller": "Sahra",
+      "StorySummary_SO": "Barxad la wadaago ayaa noqotay meel lagu arko daryeel, wada-noolaansho, iyo dayactir joogto ah.",
+      "StorySummary_EN": "A shared courtyard becomes a place where care, negotiation, and repeated repair are visible.",
+      "Story_SO": "Sawir-qaaduhu wuxuu barxadda u arkaa meel guri iyo meel bulsho labadaba ah. Taxanuhu wuxuu ku saabsan yahay dayactir wadajir ah, isku tiirsanaan, iyo sida daryeelka maalinlaha ahi u qaabeeyo meel.",
+      "Story_EN": "The photographer treats the courtyard as both domestic and public. The sequence is about shared maintenance, mutual dependence, and how everyday care can structure a place.",
+      "StoryCommunity_SO": "Daawaduhu wuxuu barxadda u akhriyi karaa khariidad xiriirro ah. Waxa caadi u muuqda ayaa bilaabaya inuu muujiyo is-afgarad, isu-dhawaansho, iyo hawsha la noolaanshaha dadka kale.",
+      "StoryCommunity_EN": "The community storyteller reads the courtyard as a map of relationships. What looks ordinary begins to show negotiation, proximity, and the labour of living alongside others."
+    },
+    {
+      "StoryCode": "BW02",
+      "District": "barawe",
+      "Location": "Shoreline",
+      "Date": "2025-01-29",
+      "Cluster": "environment",
+      "Themes": [
+        "fishing",
+        "weather",
+        "coast"
+      ],
+      "Themes_old": [
+        "sea"
+      ],
+      "Storyteller": "Mahad",
+      "StorySummary_SO": "Xeebta ayaa isu beddeshay goob shaqo iyo sugitaan, halka cimiladu maalin kasta go’aamiso waxa suuragal ah.",
+      "StorySummary_EN": "The shoreline becomes both workplace and waiting room, with weather shaping what is possible each day.",
+      "Story_SO": "Sawir-qaaduhu wuxuu xeebta u muujinayaa goob shaqo iyo goob sugitaan isku mar ah. Sawirradu waxay wada hayaan khatar, jadwal, iyo hubanti la’aan.",
+      "Story_EN": "The photographer shows the shoreline as a worksite and a waiting room at the same time. The images hold risk, rhythm, and uncertainty together.",
+      "StoryCommunity_SO": "Daawaduhu wuxuu ka fiirsan karaa kalluunka la qabtay wax ka yar, kana badan sugitaanka. Doomaha, cimilada, iyo istaagga jirku waxay abuuraan dareen ah in shaqadu ku xiran tahay wax aan si buuxda loo xukumi karin.",
+      "StoryCommunity_EN": "The community storyteller focuses less on the catch and more on anticipation. Boats, weather, and posture create a sense that work depends on forces beyond anyone’s control."
+    },
+    {
+      "StoryCode": "BD02",
+      "District": "baidoa",
+      "Location": "Water point",
+      "Date": "2025-02-03",
+      "Cluster": "community",
+      "Themes": [
+        "water-access",
+        "care-work",
+        "routine"
+      ],
+      "Themes_old": [
+        "daily-life"
+      ],
+      "Storyteller": "Ifrah",
+      "StorySummary_SO": "Helitaanka biyaha ayaa qaabeeya maalinta oo dhan, laga bilaabo hawlaha aroornimada ilaa culayska la wada qaado.",
+      "StorySummary_EN": "Access to water shapes the whole day, from early routines to the shared weight of care work.",
+      "Story_SO": "Sawir-qaaduhu wuxuu diiradda saaraya shaqo soo noqnoqota oo si fudud loo illoobo. Taxanuhu wuxuu raacayaa biyo soo ururinta oo ah jadwal qaabeeya inta ka hadhay maalinta.",
+      "Story_EN": "The photographer centres repetitive labour that is easy to overlook. The sequence follows water collection as a rhythm that shapes the rest of the day.",
+      "StoryCommunity_SO": "Daawaduhu wuxuu arki karaa sida soo noqnoqoshada caadiga ahi ay halkan u muuqato. Sawirradu waxay dalbanayaan in la eego dadaalka, ee aan lagu mashquulin wax lala yaabo.",
+      "StoryCommunity_EN": "The community storyteller notices how ordinary repetition becomes visible here. The images ask for attention to effort rather than spectacle."
+    },
+    {
+      "StoryCode": "HD02",
+      "District": "hudur",
+      "Location": "Farm plot",
+      "Date": "2025-02-09",
+      "Cluster": "livelihood",
+      "Themes": [
+        "agriculture",
+        "rain-timing",
+        "harvest"
+      ],
+      "Themes_old": [
+        "planting"
+      ],
+      "Storyteller": "Abdi",
+      "StorySummary_SO": "Go’aamada beerista iyo rajada roobku waxay sheekadan ka dhigayaan mid ka hadlaysa waqti, xusuus, iyo hubanti la’aan.",
+      "StorySummary_EN": "Planting decisions and hope for rain turn this into a story about timing, memory, and uncertainty.",
+      "Story_SO": "Sawir-qaaduhu wuxuu beerista u arkaa su’aal ku saabsan xusuus iyo waqti sida ay ugu saabsan tahay abuur iyo carro. Sawirradu waxay wada yihiin hal qiso oo ku saabsan soo laabasho aan la hubin.",
+      "Story_EN": "The photographer treats planting as a question of memory and timing as much as seed and soil. The images belong together as one account of uncertain return.",
+      "StoryCommunity_SO": "Daawaduhu wuxuu akhriyi karaa muuqaalladan sidii rajo taxaddar leh halkii ay ka ahaan lahaayeen hubanti. Qayb weyn oo sheekadu waxay ku jirtaa go’aannada la gaadhayo ka hor inta aan natiijadu muuqan.",
+      "StoryCommunity_EN": "The community storyteller reads these scenes as cautious hope rather than certainty. Much of the story sits in decisions that must be made before outcomes are visible."
+    },
+    {
+      "StoryCode": "BD03",
+      "District": "baidoa",
+      "Location": "River edge",
+      "Date": "2025-02-14",
+      "Cluster": "environment",
+      "Themes": [
+        "flooding",
+        "weather"
+      ],
+      "Themes_old": [
+        "rain"
+      ],
+      "Storyteller": "Nasro",
+      "StorySummary_SO": "Biyaha kor u kacaya iyo cimilo aan la saadaalin karin ayaa ku qasbaya qoysaska inay mar kasta dib u qiyaasaan ammaankooda.",
+      "StorySummary_EN": "Rising water and unstable weather force families to keep rethinking what safety looks like.",
+      "Story_SO": "Sawirradu waxay soo qabteen nolol ku xiran isbeddel degdeg ah. Waxa muuqda ma aha oo keliya fatahaad, balse sidoo kale feejignaan joogto ah oo ku saabsan waxa xiga.",
+      "Story_EN": "The images capture a life shaped by sudden change. What appears here is not only flooding, but a constant alertness to what may come next.",
+      "StoryCommunity_SO": "Bulshada waxay sawirradaas uga akhrinaysaa xusuus iyo digtooni. Waxa ugu weyn ma aha dhacdada keliya, ee waa sida ay dadka ugu khasabto la qabsasho joogto ah.",
+      "StoryCommunity_EN": "Community viewers read these scenes as both memory and warning. The story is not only the event itself, but the repeated adjustment it demands."
+    },
+    {
+      "StoryCode": "BW03",
+      "District": "barawe",
+      "Location": "Landing site",
+      "Date": "2025-02-18",
+      "Cluster": "environment",
+      "Themes": [
+        "fishing",
+        "coast",
+        "weather"
+      ],
+      "Themes_old": [
+        "boats"
+      ],
+      "Storyteller": "Yusuf",
+      "StorySummary_SO": "Shaqada xeebtu waxay u dhaxaysaa halis, sugitaan, iyo rajo ku xiran badda iyo cimilada.",
+      "StorySummary_EN": "Work on the coast moves between risk, waiting, and hope shaped by the sea and the weather.",
+      "Story_SO": "Sawir-qaaduhu wuxuu diiradda saaraya wakhtiyada u dhexeeya bixitaanka iyo soo noqoshada. Shaqada kalluumaysigu waa mid muuqata, balse sugitaanku isaguna waa qayb weyn oo sheekada ah.",
+      "Story_EN": "The photographer focuses on the time between departure and return. Fishing is visible as labour, but waiting is just as central to the story.",
+      "StoryCommunity_SO": "Daawadayaashu waxay ka arkaan sawirradaas nolol ku tiirsan wax aan la maamuli karin. Xeebtu waa shaqo, balse sidoo kale waa su’aal joogto ah oo ku saabsan nasiib iyo cimilo.",
+      "StoryCommunity_EN": "Viewers see a livelihood tied to forces no one fully controls. The coast is work, but also a constant question of luck and weather."
+    },
+    {
+      "StoryCode": "HD03",
+      "District": "hudur",
+      "Location": "Dry grazing land",
+      "Date": "2025-02-21",
+      "Cluster": "livelihood",
+      "Themes": [
+        "drought",
+        "mobility"
+      ],
+      "Themes_old": [
+        "pasture"
+      ],
+      "Storyteller": "Hawo",
+      "StorySummary_SO": "Meelo sii engegay ayaa qoysaska ka dhigaya kuwo mar walba socdaal iyo qorshayn ku jira.",
+      "StorySummary_EN": "As grazing land dries out, families find themselves living through constant movement and planning.",
+      "Story_SO": "Sawirradani waxay muujinayaan daal iyo dulqaad isku mar socda. Safarka looma sameeyo doorasho keliya, ee waxaa badanaa keena baahi.",
+      "Story_EN": "These images hold exhaustion and patience together. The journey is not simply a choice; it is often driven by necessity.",
+      "StoryCommunity_SO": "Bulshadu waxay sheekadan uga akhrinaysaa yaraanta iyo culayska ka dhasha. Dhaqdhaqaaqii caadiga ahaa wuxuu isu beddelay raadis joogto ah.",
+      "StoryCommunity_EN": "The community reads this as a story of scarcity and pressure. Ordinary movement has turned into a permanent search."
+    },
+    {
+      "StoryCode": "BD04",
+      "District": "baidoa",
+      "Location": "Neighbourhood lane",
+      "Date": "2025-02-25",
+      "Cluster": "community",
+      "Themes": [
+        "shared-space",
+        "routine"
+      ],
+      "Themes_old": [
+        "street-life"
+      ],
+      "Storyteller": "Luul",
+      "StorySummary_SO": "Jidadka yaryar iyo meelaha la wadaago ayaa noqda halka laga arko sida nolosha maalinlaha ahi u isku xirto dadka.",
+      "StorySummary_EN": "Small lanes and shared spaces reveal how everyday life ties people together.",
+      "Story_SO": "Sawir-qaaduhu wuxuu eegayaa meesha ay dadka, shaqada, iyo nasashadu iskaga yimaadaan. Waxyaabaha fudud ayaa halkan ka noqda sheeko weyn.",
+      "Story_EN": "The photographer looks at places where people, work, and rest meet. Ordinary details become the substance of the story.",
+      "StoryCommunity_SO": "Daawadayaashu waxay barxadaha iyo jidadkaas uga akhriyaan isku-dhawaansho iyo isku-tiirsanaan. Nolosha wadajirka ahi waxay ka muuqataa meel walba.",
+      "StoryCommunity_EN": "Viewers read these lanes and courtyards as signs of proximity and mutual reliance. Shared life is visible everywhere."
+    },
+    {
+      "StoryCode": "HD04",
+      "District": "hudur",
+      "Location": "Field edge",
+      "Date": "2025-03-01",
+      "Cluster": "livelihood",
+      "Themes": [
+        "agriculture",
+        "harvest"
+      ],
+      "Themes_old": [
+        "crop"
+      ],
+      "Storyteller": "Maryan",
+      "StorySummary_SO": "Xilliga beeraha waxa lagu arkaa isku darka shaqo culus, sugitaan, iyo rajo xiran natiijada goosashada.",
+      "StorySummary_EN": "The farming season combines hard work, waiting, and hope tied to the harvest.",
+      "Story_SO": "Sawirradani waxay muujinayaan shaqo si tartiib ah u socota, laakiin leh miisaan weyn. Wax kasta waxay ku xiran yihiin in hawshu miro dhaliso.",
+      "Story_EN": "These pictures show work that unfolds slowly, but carries heavy stakes. Everything depends on whether the effort will bear fruit.",
+      "StoryCommunity_SO": "Bulshadu waxay ka aragtaa sawirradaas dadaal muddo dheer ah. Goosashadu ma aha oo keliya natiijo, balse waa qiyaas ku saabsan badbaado iyo sharaf.",
+      "StoryCommunity_EN": "The community sees these scenes as long-term effort. Harvest is not only an outcome, but a measure of security and dignity."
+    },
+    {
+      "StoryCode": "BW04",
+      "District": "barawe",
+      "Location": "Homes near shore",
+      "Date": "2025-03-04",
+      "Cluster": "environment",
+      "Themes": [
+        "coast",
+        "displacement"
+      ],
+      "Themes_old": [
+        "erosion"
+      ],
+      "Storyteller": "Fadumo",
+      "StorySummary_SO": "Guryaha ku dhow xeebta waxay muujinayaan sida degaan iyo khatar ay isu dhinac socdaan.",
+      "StorySummary_EN": "Homes near the coast show how belonging and risk can exist side by side.",
+      "Story_SO": "Sawir-qaaduhu wuxuu xoojinayaa xiisadda u dhexaysa hoyga iyo nuglaanta. Meel la yaqaan ayaa haddana noqon karta meel aan la isku hallayn karin.",
+      "Story_EN": "The photographer emphasises the tension between home and exposure. A familiar place can also become uncertain ground.",
+      "StoryCommunity_SO": "Daawadayaashu waxay ka arkaan sawirradaas su’aal ku saabsan sii joogid iyo beddelid. Xeebtu waa hoy, balse sidoo kale waa meel laga baqo.",
+      "StoryCommunity_EN": "Viewers read the images as a question of staying or moving. The coast is home, but also a place of fear."
+    },
+    {
+      "StoryCode": "BD05",
+      "District": "baidoa",
+      "Location": "Water queue",
+      "Date": "2025-03-08",
+      "Cluster": "community",
+      "Themes": [
+        "water-access",
+        "routine"
+      ],
+      "Themes_old": [
+        "queue"
+      ],
+      "Storyteller": "Rahma",
+      "StorySummary_SO": "Safafka biyuhu waxay noqdaan sawir ka hadlaya waqti, dulqaad, iyo shaqada aan mar walba la arag.",
+      "StorySummary_EN": "Water queues become a portrait of time, patience, and labour that often goes unseen.",
+      "Story_SO": "Sawir-qaaduhu wuxuu diiradda saaraya sugitaan iyo hab-raac. Sheekadu waxay ku jirtaa dhaqdhaqaaqyada soo noqnoqda ee dadku maalin walba maraan.",
+      "Story_EN": "The photographer focuses on waiting and routine. The story lives in repeated movements that people pass through every day.",
+      "StoryCommunity_SO": "Bulshadu waxay sawirrada uga akhrinaysaa culays iyo wadajir isku jira. Safku waa dhib, laakiin sidoo kale waa meel la wadaago waqti iyo hadal.",
+      "StoryCommunity_EN": "The community sees both burden and togetherness here. The queue is hardship, but also a shared space of time and conversation."
+    },
+    {
+      "StoryCode": "HD05",
+      "District": "hudur",
+      "Location": "Seasonal track",
+      "Date": "2025-03-12",
+      "Cluster": "livelihood",
+      "Themes": [
+        "rain-timing",
+        "mobility"
+      ],
+      "Themes_old": [
+        "season"
+      ],
+      "Storyteller": "Khadar",
+      "StorySummary_SO": "Waqtiga roobka iyo go’aannada safarka ayaa noqda arrimo si dhow isugu xidhan oo hagaya nolosha.",
+      "StorySummary_EN": "Rain timing and travel decisions become tightly linked forces shaping daily life.",
+      "Story_SO": "Sawir-qaaduhu wuxuu muujinayaa sida jadwalka dabiiciga ahi u saameeyo dhaqdhaqaaqa dadka. Waxa muuqda waa qorshayn ku dhisan hubanti la’aan.",
+      "Story_EN": "The photographer shows how natural timing shapes human movement. What emerges is planning built around uncertainty.",
+      "StoryCommunity_SO": "Daawadayaashu waxay uga akhriyaan sawirradaas sugitaan iyo la qabsasho. Waqtigu halkan ma aha tiro keliya, balse waa go’aan nololeed.",
+      "StoryCommunity_EN": "Viewers read these scenes as waiting and adjustment. Time here is not just a number, but a life decision."
+    },
+    {
+      "StoryCode": "BW05",
+      "District": "barawe",
+      "Location": "Boat repair area",
+      "Date": "2025-03-15",
+      "Cluster": "environment",
+      "Themes": [
+        "fishing",
+        "recovery"
+      ],
+      "Themes_old": [
+        "repair"
+      ],
+      "Storyteller": "Salim",
+      "StorySummary_SO": "Dayactirka doomaha wuxuu sheekadan ka dhigayaa mid ka hadlaysa soo kabasho, xirfad, iyo diyaargarow.",
+      "StorySummary_EN": "Boat repair turns this into a story about recovery, skill, and preparation.",
+      "Story_SO": "Sawirradani waxay eegayaan shaqada kahor shaqada kale. Soo celinta qalabku waa qayb ka mid ah nolosha xeebta sida kalluumaysiga laftiisu yahay.",
+      "Story_EN": "These images look at work before the next round of work. Restoring equipment is as much part of coastal life as fishing itself.",
+      "StoryCommunity_SO": "Bulshadu waxay ka aragtaa sawirradaas xirfad iyo dulqaad. Waxyaabo la jabiyey ayaa haddana lagu celinayaa adeeg iyo rajo.",
+      "StoryCommunity_EN": "The community sees skill and patience here. Things that have been damaged are being brought back into use and hope."
+    },
+    {
+      "StoryCode": "BD06",
+      "District": "baidoa",
+      "Location": "Meeting shade",
+      "Date": "2025-03-19",
+      "Cluster": "community",
+      "Themes": [
+        "shared-space",
+        "care-work"
+      ],
+      "Themes_old": [
+        "discussion"
+      ],
+      "Storyteller": "Deqa",
+      "StorySummary_SO": "Meelaha lagu kulmo waxay noqdaan goob lagu arko wada-tashi, daryeel, iyo wadaagis culays iyo fikrad ah.",
+      "StorySummary_EN": "Meeting spaces reveal consultation, care, and the sharing of both burdens and ideas.",
+      "Story_SO": "Sawir-qaaduhu wuxuu diiradda saaraya wakhtiyada dadku isu yimaadaan si ay u hadlaan, u dhagaystaan, una qorsheeyaan. Xiriirka ayaa noqda waxa ugu muuqda.",
+      "Story_EN": "The photographer focuses on moments when people come together to talk, listen, and plan. Relationship becomes the most visible subject.",
+      "StoryCommunity_SO": "Daawadayaashu waxay uga akhriyaan sawirradaas taageero iyo wadajir. Meesha la wada fadhiisto waxay noqotaa qaab kale oo daryeel loo muujiyo.",
+      "StoryCommunity_EN": "Viewers read support and solidarity in these scenes. Sitting together becomes another way of showing care."
+    }
+  ]
+}
