@@ -1,322 +1,530 @@
-
 const P = (() => {
   const UI = {
     en: {
       site: 'Photostories from Southwest State',
+      introKicker: 'A curated story space',
+      introBody: 'A random photostory opens on arrival. Swipe through the images, then move into the gallery to stay with related themes, people, and places.',
       saved: 'Saved',
-      savedStories: 'Saved photostories',
+      savedStories: 'Saved stories',
       save: 'Save',
-      unsave: 'Unsave',
-      yes: 'Yes',
-      no: 'No',
-      removeSavedTitle: 'Remove from saved?',
-      removeSavedBody: 'This photostory will be removed from your saved list.',
-      somali: 'Soomali',
-      english: 'English',
+      unsave: 'Saved',
+      share: 'Share',
+      copied: 'Link copied',
       filters: 'Filters',
-      cluster: 'Clusters',
-      themes: 'Themes',
+      reset: 'Reset all',
+      primaryTheme: 'Primary theme',
+      secondaryThemes: 'Secondary themes',
+      people: 'People / actors',
       district: 'District',
       all: 'All',
-      reset: 'Reset',
-      openStory: 'Open story',
-      another: 'Another random story',
-      explore: 'Explore by theme and location',
-      share: 'Share',
-      copyLink: 'Copy link',
-      copied: 'Copied',
-      noMatches: 'No stories match these filters.',
+      story: 'Story',
+      reflections: 'Community reflections',
+      storyteller: 'Storyteller',
+      photoGallery: 'Photo sequence',
+      selectedStory: 'Selected story',
       results: 'stories',
-      photographerHeading: 'Story',
-      beholderHeading: 'Reflections by people in the photos or community viewers',
-      photographerStorytellerLabel: 'Photographer storyteller:',
-      chooseClusterToSeeThemes: 'Choose a cluster to see related themes',
-      storyTagsLead: 'Show more photostories related to any of the tags of this photostory',
-      surpriseMe: 'Surprise me with',
-      randomOne: 'a random one!',
-      show: 'Show',
-      filteredEarlier: 'the ones I filtered earlier',
-      letMe: 'Let me',
-      exploreMyself: 'explore myself',
+      openFromGallery: 'Load story',
+      seeRandomRelated: 'See a random related story',
+      seeRelated: 'See related stories',
+      exploreFilters: 'Explore stories through filters',
+      galleryTitle: 'Gallery',
+      galleryBody: 'Use the lighter taxonomy to move through the collection. Primary theme leads, people stay secondary, and optional secondary themes help refine the space without making it feel technical.',
+      currentFilters: 'Current story filters applied',
+      noMatches: 'No stories match these filters yet.',
+      jumpToGallery: 'Explore gallery',
       savedEmpty: 'No saved stories yet.',
+      language: 'Language',
+      english: 'English',
+      somali: 'Soomali',
+      imageLabel: 'Image',
+      of: 'of',
       close: 'Close',
-      filtersAria: 'Language selector',
+      clearAndExplore: 'Clear filters',
+      relatedReady: 'Gallery aligned to this story',
+      randomReady: 'Showing a related story',
+      loadedStory: 'Story loaded',
     },
     so: {
       site: 'Sheeko-sawirro ka socda Koonfur Galbeed',
+      introKicker: 'Goob sheeko oo la hagayo',
+      introBody: 'Marka hore waxaa furmaya sheeko-sawir random ah. Sawirrada jiid, dabadeedna u deg qaybta gallery-ga si aad ugu sii socoto mawduucyo, dad, iyo goobo la xiriira.',
       saved: 'La keydiyey',
-      savedStories: 'Sheeko-sawirrada la keydiyey',
+      savedStories: 'Sheekooyinka la keydiyey',
       save: 'Keydi',
-      unsave: 'Ka saar keydka',
-      yes: 'Haa',
-      no: 'Maya',
-      removeSavedTitle: 'Ma laga saaraa kuwa la keydiyey?',
-      removeSavedBody: 'Sheeko-sawirkan waxaa laga saari doonaa liiskaaga kaydsan.',
-      somali: 'Soomali',
-      english: 'English',
+      unsave: 'Waa la keydiyey',
+      share: 'La wadaag',
+      copied: 'Linkiga waa la nuqulay',
       filters: 'Shaandhooyin',
-      cluster: 'Qaybo',
-      themes: 'Mawduucyo',
+      reset: 'Dib u nadiifi',
+      primaryTheme: 'Mawduuca koowaad',
+      secondaryThemes: 'Mawduucyo dheeri ah',
+      people: 'Dadka / jilayaasha',
       district: 'Degmo',
       all: 'Dhammaan',
-      reset: 'Tirtir',
-      openStory: 'Fur sheekada',
-      another: 'Sheeko kale oo random ah',
-      explore: 'Ku baadh mawduuc iyo goob',
-      share: 'La wadaag',
-      copyLink: 'Nuqul ka qaad linkiga',
-      copied: 'Waa la nuqulay',
-      noMatches: 'Sheekooyin ku habboon shaandhooyinkan ma jiraan.',
+      story: 'Sheekada',
+      reflections: 'Milicsiyada bulshada',
+      storyteller: 'Sheeko-wade',
+      photoGallery: 'Taxanaha sawirrada',
+      selectedStory: 'Sheekada la doortay',
       results: 'sheeko',
-      photographerHeading: 'Sheekada',
-      beholderHeading: 'Milicsiyada dadka sawirrada ku jira ama daawadayaasha bulshada',
-      photographerStorytellerLabel: 'Sheeko-wadaha sawir-qaadaha:',
-      chooseClusterToSeeThemes: 'Dooro qayb si aad u aragto mawduucyada la xiriira',
-      storyTagsLead: 'I tus sheeko-sawirro kale oo la xiriira mid ka mid ah tags-ka sheekadan',
-      surpriseMe: 'Igu yaabi',
-      randomOne: 'mid random ah!',
-      show: 'I tus',
-      filteredEarlier: 'kuwii aan hore u shaandheeyey',
-      letMe: 'I daa aniga',
-      exploreMyself: 'aan is-baadho',
-      savedEmpty: 'Weli sheekooyin la keydiyey ma jiraan.',
+      openFromGallery: 'Soo geli sheekada',
+      seeRandomRelated: 'I tus sheeko random ah oo la xiriirta',
+      seeRelated: 'I tus sheekooyinka la xiriira',
+      exploreFilters: 'Sheekooyinka ku baadh shaandhooyin',
+      galleryTitle: 'Gallery',
+      galleryBody: 'Ku dhex soco kaydka adigoo adeegsanaya taxanahan fudud. Mawduuca koowaad ayaa hormuud ah, dadka waxay ahaanayaan lakab labaad, mawduucyada dheeraadka ahna waxay si deggan u sifeeyaan raadinta.',
+      currentFilters: 'Shaandhooyinka sheekadan ayaa la saaray',
+      noMatches: 'Weli ma jiraan sheekooyin ku habboon shaandhooyinkan.',
+      jumpToGallery: 'Tag gallery-ga',
+      savedEmpty: 'Weli wax sheeko ah maadan keydin.',
+      language: 'Luqad',
+      english: 'English',
+      somali: 'Soomali',
+      imageLabel: 'Sawir',
+      of: 'ka mid ah',
       close: 'Xir',
-      filtersAria: 'Xulashada luqadda',
+      clearAndExplore: 'Nadiifi shaandhooyinka',
+      relatedReady: 'Gallery-gu wuxuu la jaanqaaday sheekadan',
+      randomReady: 'Waxaa muuqata sheeko la xiriirta',
+      loadedStory: 'Sheekadii waa la soo geliyey',
     }
   };
+
+  const ACTORS = [
+    { slug: 'children', en: 'Children', so: 'Carruur' },
+    { slug: 'youth', en: 'Youth', so: 'Dhallinyaro' },
+    { slug: 'women-girls', en: 'Women / girls', so: 'Haween / gabdho' },
+    { slug: 'men-boys', en: 'Men / boys', so: 'Rag / wiilal' },
+    { slug: 'elders', en: 'Elders', so: 'Waayeel' }
+  ];
 
   const STORAGE_KEYS = {
     lang: 'photostory_lang',
     saved: 'photostory_saved',
-    filters: 'photostory_filters',
-    intro: 'photostory_intro_dismissed'
+    filters: 'photostory_filters_v2'
   };
+
+  const defaultFilters = () => ({
+    primaryTheme: '',
+    secondaryThemes: [],
+    actors: [],
+    districts: []
+  });
+
+  function parseStoredJSON(storage, key, fallback) {
+    try {
+      const raw = storage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function normaliseFilters(raw) {
+    const base = defaultFilters();
+    if (!raw || typeof raw !== 'object') return base;
+    return {
+      primaryTheme: typeof raw.primaryTheme === 'string' ? raw.primaryTheme : '',
+      secondaryThemes: Array.isArray(raw.secondaryThemes) ? raw.secondaryThemes.filter(Boolean) : [],
+      actors: Array.isArray(raw.actors) ? raw.actors.filter(Boolean) : [],
+      districts: Array.isArray(raw.districts) ? raw.districts.filter(Boolean) : []
+    };
+  }
 
   const state = {
     lang: localStorage.getItem(STORAGE_KEYS.lang) || 'en',
-    saved: JSON.parse(localStorage.getItem(STORAGE_KEYS.saved) || '[]'),
-    filters: JSON.parse(sessionStorage.getItem(STORAGE_KEYS.filters) || '{"cluster":"","themes":[],"districts":[]}'),
-    introDismissed: sessionStorage.getItem(STORAGE_KEYS.intro) === '1',
+    saved: parseStoredJSON(localStorage, STORAGE_KEYS.saved, []),
+    filters: normaliseFilters(parseStoredJSON(sessionStorage, STORAGE_KEYS.filters, defaultFilters())),
     stories: [],
     taxonomy: null,
     storyImages: {},
+    currentStoryCode: ''
   };
 
-  const q = (sel, root=document) => root.querySelector(sel);
-  const qq = (sel, root=document) => Array.from(root.querySelectorAll(sel));
-  const escapeHtml = (str='') => String(str)
-    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
-    .replaceAll('"','&quot;').replaceAll("'", '&#39;');
-  const t = () => UI[state.lang];
-  const clusterMap = () => new Map(state.taxonomy.clusters.map(x => [x.slug, x]));
-  const districtMap = () => new Map(state.taxonomy.districts.map(x => [x.slug, x]));
-  const themeMap = () => new Map(state.taxonomy.themes.map(x => [x.slug, x]));
-  const bySlug = (list, slug) => list.find(x => x.slug === slug);
-  const label = (item) => item?.[state.lang] || item?.en || '';
-  const countSaved = () => state.saved.length;
-  const saveState = () => {
+  const q = (sel, root = document) => root.querySelector(sel);
+  const qq = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+  const t = () => UI[state.lang] || UI.en;
+  const escapeHtml = (value = '') => String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+
+  function saveState() {
     localStorage.setItem(STORAGE_KEYS.lang, state.lang);
     localStorage.setItem(STORAGE_KEYS.saved, JSON.stringify(state.saved));
     sessionStorage.setItem(STORAGE_KEYS.filters, JSON.stringify(state.filters));
     document.documentElement.lang = state.lang === 'so' ? 'so' : 'en';
-  };
-  const dismissIntro = () => {
-    state.introDismissed = true;
-    sessionStorage.setItem(STORAGE_KEYS.intro, '1');
-  };
-  const isSaved = (code) => state.saved.includes(code);
-  const toggleSaved = (code) => {
-    if (isSaved(code)) state.saved = state.saved.filter(x => x !== code);
-    else state.saved = [...state.saved, code];
-    saveState();
-  };
-  const getStory = (code) => state.stories.find(s => s.StoryCode === code);
-  const placeholderSvg = (story) => `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#edf2f7"/><stop offset="1" stop-color="#d9e2ec"/></linearGradient></defs><rect fill="url(#g)" width="1200" height="800" rx="36"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Lucida Sans Unicode, Lucida Grande, sans-serif" font-size="44" fill="#475569">${story.StoryCode}</text></svg>`)}`;
-  const storyImages = (story) => state.storyImages[story.StoryCode] || [];
-  const storyCoverPath = (story) => {
-    const images = storyImages(story);
-    return images.length ? images[Math.floor(Math.random() * images.length)] : placeholderSvg(story);
-  };
-  const storyImagePath = (story, n) => storyImages(story)[n - 1] || storyImages(story)[0] || placeholderSvg(story);
-  const photoCount = (story) => Math.max(1, storyImages(story).length || 1);
-  const photoAlt = (story, n) => {
-    const district = label(bySlug(state.taxonomy.districts, story.District)) || story.District;
-    return `Photo ${n} for ${story.StoryCode} by ${story.Storyteller} in ${district}`;
-  };
-  const storySummary = (story) => state.lang === 'so' ? story.StorySummary_SO : story.StorySummary_EN;
-  const photographerText = (story) => state.lang === 'so' ? story.Story_SO : story.Story_EN;
-  const communityText = (story) => state.lang === 'so' ? story.StoryCommunity_SO : story.StoryCommunity_EN;
-  const metaChip = (kind, text) => `<span class="meta-chip ${kind}">${escapeHtml(text)}</span>`;
-  const countBadge = (n) => `<span class="count-badge">${n}</span>`;
-  const icon = {
-    heart(fill=false, cls='icon'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="${fill ? 'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 20.5c-4.8-3.3-8-6.2-8-10.2 0-2.5 2-4.5 4.4-4.5 1.5 0 2.8.7 3.6 2 0 0 .9-2 3.6-2 2.4 0 4.4 2 4.4 4.5 0 4-3.2 6.9-8 10.2Z"/></svg>`; },
-    share(cls='icon'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.7 15.4 6.3M8.6 13.3l6.8 4.4"/></svg>`; },
-    copy(cls='icon sm'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><rect x="4" y="4" width="11" height="11" rx="2"/></svg>`; },
-    mail(cls='icon sm'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>`; },
-    x(cls='icon sm'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>`; },
-    chevronLeft(cls='icon'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m15 6-6 6 6 6"/></svg>`; },
-    chevronRight(cls='icon'){ return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6 6 6-6 6"/></svg>`; },
-  };
+  }
 
-  async function loadData(){
+  function bySlug(list, slug) {
+    return (list || []).find(item => item.slug === slug);
+  }
+
+  function label(item) {
+    return item?.[state.lang] || item?.en || '';
+  }
+
+  function storyPrimaryTheme(story) {
+    return story.PrimaryTheme || story.Themes?.[0] || '';
+  }
+
+  function storySecondaryThemes(story) {
+    const fallback = (story.Themes || []).filter(slug => slug !== storyPrimaryTheme(story)).slice(0, 2);
+    return Array.isArray(story.SecondaryThemes) && story.SecondaryThemes.length ? story.SecondaryThemes : fallback;
+  }
+
+  function storyActors(story) {
+    return Array.isArray(story.Actors) ? story.Actors : [];
+  }
+
+  function storyAllThemes(story) {
+    return [storyPrimaryTheme(story), ...storySecondaryThemes(story)].filter(Boolean);
+  }
+
+  function enhanceStory(story) {
+    return {
+      ...story,
+      PrimaryTheme: storyPrimaryTheme(story),
+      SecondaryThemes: storySecondaryThemes(story),
+      Actors: storyActors(story),
+      AllThemes: storyAllThemes(story)
+    };
+  }
+
+  async function loadData() {
     const [storiesRes, taxonomyRes, manifestRes] = await Promise.all([
       fetch('data/stories.json'),
       fetch('data/clusters-themes.json'),
       fetch('data/image-manifest.json')
     ]);
+
     const storiesJson = await storiesRes.json();
-    state.stories = storiesJson.stories || [];
-    state.taxonomy = await taxonomyRes.json();
+    const taxonomyJson = await taxonomyRes.json();
     const manifestJson = await manifestRes.json();
+
+    state.stories = (storiesJson.stories || []).map(enhanceStory);
     state.storyImages = manifestJson.stories || {};
+    state.taxonomy = {
+      ...taxonomyJson,
+      actors: ACTORS
+    };
     saveState();
   }
 
-  function renderHeader(showLang = true){
-    const ui = t();
+  function getStory(code) {
+    return state.stories.find(story => story.StoryCode === code);
+  }
+
+  function randomStory(exceptCode = '') {
+    const pool = state.stories.filter(story => story.StoryCode !== exceptCode);
+    if (!pool.length) return state.stories[0] || null;
+    return pool[Math.floor(Math.random() * pool.length)] || pool[0] || null;
+  }
+
+  function storyImages(story) {
+    return state.storyImages[story?.StoryCode] || [];
+  }
+
+  function placeholderSvg(story) {
+    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1a2430"/><stop offset="1" stop-color="#243243"/></linearGradient></defs><rect fill="url(#g)" width="1600" height="1000" rx="40"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" fill="#e7edf2">${story?.StoryCode || 'Story'}</text></svg>`)}`;
+  }
+
+  function storyCoverPath(story) {
+    return storyImages(story)[0] || placeholderSvg(story);
+  }
+
+  function storyImagePath(story, index) {
+    return storyImages(story)[index] || storyImages(story)[0] || placeholderSvg(story);
+  }
+
+  function photoCount(story) {
+    return Math.max(1, storyImages(story).length || 1);
+  }
+
+  function photoAlt(story, index) {
+    const district = label(bySlug(state.taxonomy?.districts, story.District)) || story.District;
+    return `Photo ${index + 1} for ${story.StoryCode} by ${story.Storyteller} in ${district}`;
+  }
+
+  function storySummary(story) {
+    return state.lang === 'so' ? story.StorySummary_SO : story.StorySummary_EN;
+  }
+
+  function storyText(story) {
+    return state.lang === 'so' ? story.Story_SO : story.Story_EN;
+  }
+
+  function communityText(story) {
+    return state.lang === 'so' ? story.StoryCommunity_SO : story.StoryCommunity_EN;
+  }
+
+  function themeLabel(slug) {
+    return label(bySlug(state.taxonomy?.themes, slug));
+  }
+
+  function districtLabel(slug) {
+    return label(bySlug(state.taxonomy?.districts, slug));
+  }
+
+  function actorLabel(slug) {
+    return label(bySlug(state.taxonomy?.actors, slug));
+  }
+
+  function clusterLabel(slug) {
+    return label(bySlug(state.taxonomy?.clusters, slug));
+  }
+
+  function storyMetaChips(story) {
+    const chips = [
+      `<span class="meta-chip primary">${escapeHtml(themeLabel(story.PrimaryTheme))}</span>`,
+      ...story.SecondaryThemes.map(slug => `<span class="meta-chip secondary">${escapeHtml(themeLabel(slug))}</span>`),
+      ...story.Actors.map(slug => `<span class="meta-chip actor">${escapeHtml(actorLabel(slug))}</span>`),
+      `<span class="meta-chip district">${escapeHtml(districtLabel(story.District))}</span>`
+    ];
+    return chips.join('');
+  }
+
+  function isSaved(code) {
+    return state.saved.includes(code);
+  }
+
+  function toggleSaved(code) {
+    if (isSaved(code)) state.saved = state.saved.filter(item => item !== code);
+    else state.saved = [...state.saved, code];
+    saveState();
+  }
+
+  function updateUrl(code) {
+    if (!code) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('code', code);
+    window.history.replaceState({ code }, '', url);
+  }
+
+  function readRouteStoryCode() {
+    const code = new URLSearchParams(window.location.search).get('code') || '';
+    return getStory(code) ? code : '';
+  }
+
+  function setCurrentStory(code) {
+    const story = getStory(code);
+    if (!story) return null;
+    state.currentStoryCode = story.StoryCode;
+    updateUrl(story.StoryCode);
+    document.title = `${story.Storyteller} - ${t().site}`;
+    return story;
+  }
+
+  function scrollToId(id) {
+    q(`#${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  let toastTimer = null;
+  function showToast(message) {
+    const existing = q('#toast');
+    if (existing) existing.remove();
+    const node = document.createElement('div');
+    node.id = 'toast';
+    node.className = 'toast';
+    node.textContent = message;
+    document.body.appendChild(node);
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(() => node.remove(), 2200);
+  }
+
+  async function shareStory(code) {
+    const story = getStory(code);
+    if (!story) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('code', code);
+    const shareData = {
+      title: `${story.Storyteller} - ${t().site}`,
+      text: storySummary(story),
+      url: url.toString()
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        return;
+      } catch (error) {
+        if (error && error.name === 'AbortError') return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(url.toString());
+      showToast(t().copied);
+    } catch {
+      showToast(url.toString());
+    }
+  }
+
+  function renderHeader() {
     return `
-      <header class="header">
-        <div class="site-title">${escapeHtml(ui.site)}</div>
-        <div class="header-actions">
-          ${showLang ? `
-            <div class="lang-switch" role="group" aria-label="${escapeHtml(ui.filtersAria)}">
-              <button type="button" data-lang="so" aria-pressed="${state.lang === 'so'}">${escapeHtml(ui.somali)}</button>
-              <button type="button" data-lang="en" aria-pressed="${state.lang === 'en'}">${escapeHtml(ui.english)}</button>
-            </div>` : ''}
-          <button type="button" class="action-btn saved-btn" data-open-saved>
-            <span>${escapeHtml(ui.saved)}</span>
-            <span class="saved-count-heart" aria-hidden="true">${icon.heart(true)}<span class="count">${countSaved()}</span></span>
+      <header class="site-header shell">
+        <div class="site-lockup">
+          <button class="site-brand" type="button" data-scroll-story>
+            <span class="site-kicker">${escapeHtml(t().introKicker)}</span>
+            <span class="site-title">${escapeHtml(t().site)}</span>
           </button>
+          <p class="site-intro">${escapeHtml(t().introBody)}</p>
+        </div>
+        <div class="site-actions">
+          <div class="lang-switch" role="group" aria-label="${escapeHtml(t().language)}">
+            <button type="button" data-lang="en" aria-pressed="${state.lang === 'en'}">${escapeHtml(t().english)}</button>
+            <button type="button" data-lang="so" aria-pressed="${state.lang === 'so'}">${escapeHtml(t().somali)}</button>
+          </div>
+          <button type="button" class="ghost-btn" data-open-saved>
+            ${icon.heart(isSaved(state.currentStoryCode), 'icon sm', true)}
+            <span>${escapeHtml(t().saved)}</span>
+            <span class="saved-count">${state.saved.length}</span>
+          </button>
+          <button type="button" class="primary-btn" data-scroll-gallery>${escapeHtml(t().jumpToGallery)}</button>
         </div>
       </header>`;
   }
 
-  function bindHeader(root=document){
-    qq('[data-lang]', root).forEach(btn => btn.addEventListener('click', () => {
-      state.lang = btn.dataset.lang;
-      saveState();
-      document.dispatchEvent(new CustomEvent('photostory:langchange'));
-    }));
-    qq('[data-open-saved]', root).forEach(btn => btn.addEventListener('click', showSavedModal));
+  function storyCard(story, options = {}) {
+    const selected = options.selected ? 'selected' : '';
+    return `
+      <article class="gallery-card ${selected}" data-story-card="${escapeHtml(story.StoryCode)}">
+        <button type="button" class="card-main" data-story-select="${escapeHtml(story.StoryCode)}">
+          <div class="card-image-wrap">
+            <img class="card-image" src="${storyCoverPath(story)}" alt="${escapeHtml(photoAlt(story, 0))}">
+          </div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <span class="card-eyebrow">${escapeHtml(themeLabel(story.PrimaryTheme))}</span>
+              <span class="card-district">${escapeHtml(districtLabel(story.District))}</span>
+            </div>
+            <h3 class="card-title">${escapeHtml(story.Storyteller || story.StoryCode)}</h3>
+            <p class="card-summary">${escapeHtml(storySummary(story))}</p>
+            <div class="chip-row compact">${storyMetaChips(story)}</div>
+          </div>
+        </button>
+        <div class="card-footer">
+          <button type="button" class="mini-btn" data-story-select="${escapeHtml(story.StoryCode)}">${escapeHtml(t().openFromGallery)}</button>
+          <button type="button" class="mini-btn ${isSaved(story.StoryCode) ? 'active' : ''}" data-save-toggle="${escapeHtml(story.StoryCode)}">${escapeHtml(isSaved(story.StoryCode) ? t().unsave : t().save)}</button>
+        </div>
+      </article>`;
   }
 
-  function renderSavedModal(){
-    const ui = t();
-    const clusterOrder = Object.fromEntries(state.taxonomy.clusters.map((item, i) => [item.slug, i]));
-    const districtOrder = Object.fromEntries(state.taxonomy.districts.map((item, i) => [item.slug, i]));
-    const savedStories = state.stories.filter(s => isSaved(s.StoryCode)).sort((a,b) => {
-      const c = (clusterOrder[a.Cluster] ?? 999) - (clusterOrder[b.Cluster] ?? 999);
-      if (c) return c;
-      const d = (districtOrder[a.District] ?? 999) - (districtOrder[b.District] ?? 999);
-      if (d) return d;
-      return a.StoryCode.localeCompare(b.StoryCode);
-    });
-    return `
-      <div class="saved-backdrop" id="savedModal">
-        <div class="saved-panel" role="dialog" aria-modal="true" aria-labelledby="savedTitle">
-          <div class="saved-head">
-            <h2 class="modal-title" id="savedTitle">${escapeHtml(ui.savedStories)}</h2>
-            <button class="modal-close" data-close-saved>${icon.x()}<span class="sr-only">${escapeHtml(ui.close)}</span></button>
+  function iconButtonLabel(text, svg) {
+    return `${svg}<span>${escapeHtml(text)}</span>`;
+  }
+
+  function renderSavedModal(options = {}) {
+    const onSelectStory = typeof options.onSelectStory === 'function' ? options.onSelectStory : null;
+    const savedStories = state.stories.filter(story => isSaved(story.StoryCode));
+    const wrap = document.createElement('div');
+    wrap.innerHTML = `
+      <div class="overlay" id="savedModal">
+        <div class="saved-modal" role="dialog" aria-modal="true" aria-labelledby="savedTitle">
+          <div class="saved-modal-head">
+            <div>
+              <div class="section-kicker">${escapeHtml(t().saved)}</div>
+              <h2 class="modal-title" id="savedTitle">${escapeHtml(t().savedStories)}</h2>
+            </div>
+            <button type="button" class="icon-btn" data-close-saved>${icon.x()}</button>
           </div>
-          <div class="saved-body">
-            ${savedStories.length ? `<div class="card-grid">${
-              savedStories.map((story, idx) => storyCard(story, idx, true)).join('')
-            }</div>` : `<div class="empty-note">${escapeHtml(ui.savedEmpty)}</div>`}
+          <div class="saved-modal-body">
+            ${savedStories.length ? `<div class="gallery-grid saved-grid">${savedStories.map(story => storyCard(story, { selected: story.StoryCode === state.currentStoryCode })).join('')}</div>` : `<div class="empty-state">${escapeHtml(t().savedEmpty)}</div>`}
           </div>
         </div>
       </div>`;
+
+    const modal = wrap.firstElementChild;
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', event => {
+      const closeButton = event.target.closest('[data-close-saved]');
+      if (closeButton || event.target === modal) {
+        modal.remove();
+        return;
+      }
+      const saveButton = event.target.closest('[data-save-toggle]');
+      if (saveButton) {
+        toggleSaved(saveButton.dataset.saveToggle);
+        modal.remove();
+        renderSavedModal(options);
+        document.dispatchEvent(new CustomEvent('photostory:savedchange'));
+        return;
+      }
+      const selectButton = event.target.closest('[data-story-select]');
+      if (selectButton && onSelectStory) {
+        modal.remove();
+        onSelectStory(selectButton.dataset.storySelect);
+      }
+    });
   }
 
-  function showSavedModal(){
-    const wrap = document.createElement('div');
-    wrap.innerHTML = renderSavedModal();
-    document.body.appendChild(wrap.firstElementChild);
-    q('[data-close-saved]').addEventListener('click', closeSavedModal);
-    q('#savedModal').addEventListener('click', (e) => { if (e.target.id === 'savedModal') closeSavedModal(); });
-  }
-  function closeSavedModal(){ q('#savedModal')?.remove(); }
-
-  function storyCard(story, index=0, fromSaved=false){
-    const cluster = label(bySlug(state.taxonomy.clusters, story.Cluster));
-    const district = label(bySlug(state.taxonomy.districts, story.District));
-    const themes = story.Themes.map(slug => label(bySlug(state.taxonomy.themes, slug)));
-    return `
-      <a class="card" href="story.html?code=${encodeURIComponent(story.StoryCode)}">
-        <div class="card-image-wrap">
-          <img class="card-image" src="${storyCoverPath(story)}" alt="${escapeHtml(photoAlt(story,1))}">
-          <div class="card-heart" aria-label="${isSaved(story.StoryCode) ? 'saved' : 'not saved'}">${icon.heart(isSaved(story.StoryCode), 'icon')}</div>
-        </div>
-        <div class="card-body">
-          <p class="summary">${escapeHtml(storySummary(story))}</p>
-          <div class="meta-row">
-            ${metaChip('cluster', cluster)}
-            ${themes.map(t => metaChip('theme', t)).join('')}
-            ${metaChip('district', district)}
-          </div>
-        </div>
-      </a>`;
-  }
-
-  function renderConfirm(anchorEl, code){
-    const ui = t();
-    const rect = anchorEl.getBoundingClientRect();
-    const mobile = window.innerWidth < 768;
-    if (mobile){
-      const node = document.createElement('div');
-      node.className = 'confirm-backdrop';
-      node.id = 'confirmModal';
-      node.innerHTML = `<div class="confirm-pop"><h2>${escapeHtml(ui.removeSavedTitle)}</h2><p>${escapeHtml(ui.removeSavedBody)}</p><div class="confirm-actions"><button class="action-btn" data-no>${escapeHtml(ui.no)}</button><button class="primary-btn" data-yes>${escapeHtml(ui.yes)}</button></div></div>`;
-      document.body.appendChild(node);
-      q('[data-no]', node).onclick = () => node.remove();
-      q('[data-yes]', node).onclick = () => { toggleSaved(code); node.remove(); document.dispatchEvent(new CustomEvent('photostory:savedchange')); };
-      node.onclick = (e) => { if (e.target === node) node.remove(); };
-      return;
+  const icon = {
+    heart(fill = false, cls = 'icon', tight = false) {
+      const fillValue = fill ? 'currentColor' : 'none';
+      const clsValue = tight ? `${cls} tight` : cls;
+      return `<svg class="${clsValue}" viewBox="0 0 24 24" aria-hidden="true" fill="${fillValue}" stroke="currentColor" stroke-width="1.8"><path d="M12 20.5c-4.8-3.3-8-6.2-8-10.2 0-2.5 2-4.5 4.4-4.5 1.5 0 2.8.7 3.6 2 0 0 .9-2 3.6-2 2.4 0 4.4 2 4.4 4.5 0 4-3.2 6.9-8 10.2Z"/></svg>`;
+    },
+    share(cls = 'icon') {
+      return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.7 15.4 6.3M8.6 13.3l6.8 4.4"/></svg>`;
+    },
+    chevronLeft(cls = 'icon') {
+      return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m15 6-6 6 6 6"/></svg>`;
+    },
+    chevronRight(cls = 'icon') {
+      return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6 6 6-6 6"/></svg>`;
+    },
+    x(cls = 'icon') {
+      return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>`;
     }
-    const pop = document.createElement('div');
-    pop.className = 'confirm-pop';
-    pop.id = 'confirmPop';
-    pop.style.top = `${Math.min(window.innerHeight - 180, rect.bottom + 6)}px`;
-    pop.style.left = `${Math.max(16, Math.min(window.innerWidth - 336, rect.left))}px`;
-    pop.innerHTML = `<h2>${escapeHtml(ui.removeSavedTitle)}</h2><p>${escapeHtml(ui.removeSavedBody)}</p><div class="confirm-actions"><button class="action-btn" data-no>${escapeHtml(ui.no)}</button><button class="primary-btn" data-yes>${escapeHtml(ui.yes)}</button></div>`;
-    document.body.appendChild(pop);
-    const cleanup = () => pop.remove();
-    q('[data-no]', pop).onclick = cleanup;
-    q('[data-yes]', pop).onclick = () => { toggleSaved(code); cleanup(); document.dispatchEvent(new CustomEvent('photostory:savedchange')); };
-    setTimeout(() => {
-      const closer = (ev) => {
-        if (!pop.contains(ev.target)) { cleanup(); document.removeEventListener('mousedown', closer); document.removeEventListener('touchstart', closer); }
-      };
-      document.addEventListener('mousedown', closer);
-      document.addEventListener('touchstart', closer);
-    }, 0);
-  }
-
-  function createShareMenu(code){
-    const url = new URL(window.location.href);
-    url.pathname = url.pathname.replace(/[^/]+$/, 'story.html');
-    url.search = `?code=${encodeURIComponent(code)}`;
-    const ui = t();
-    const menu = document.createElement('div');
-    menu.className = 'share-menu';
-    menu.innerHTML = `
-      <button type="button" data-copy><span>${icon.copy()} ${escapeHtml(ui.copyLink)}</span><span class="copy-status"></span></button>
-      <button type="button" data-mail><span>${icon.mail()} Email</span></button>
-      <button type="button" data-facebook><span>f Facebook</span></button>
-      <button type="button" data-x><span>X X</span></button>`;
-    q('[data-copy]', menu).onclick = async () => {
-      try{ await navigator.clipboard.writeText(url.toString()); q('.copy-status', menu).textContent = ui.copied; setTimeout(() => q('.copy-status', menu).textContent='', 1200); }catch{}
-    };
-    q('[data-mail]', menu).onclick = () => { window.location.href = `mailto:?subject=${encodeURIComponent(document.title)}&body=${encodeURIComponent(url.toString())}`; };
-    q('[data-facebook]', menu).onclick = () => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url.toString())}`, '_blank', 'noopener');
-    q('[data-x]', menu).onclick = () => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url.toString())}`, '_blank', 'noopener');
-    return menu;
-  }
+  };
 
   return {
-    state, t, loadData, saveState, dismissIntro, bySlug, label, icon,
-    storyImages, storyCoverPath, storyImagePath, photoAlt, photoCount, getStory, storySummary,
-    photographerText, communityText, metaChip, renderHeader, bindHeader,
-    renderSavedModal, showSavedModal, closeSavedModal, storyCard,
-    renderConfirm, createShareMenu, q, qq, escapeHtml
+    ACTORS,
+    state,
+    t,
+    q,
+    qq,
+    escapeHtml,
+    saveState,
+    loadData,
+    bySlug,
+    label,
+    themeLabel,
+    districtLabel,
+    actorLabel,
+    clusterLabel,
+    storyPrimaryTheme,
+    storySecondaryThemes,
+    storyActors,
+    storyAllThemes,
+    getStory,
+    randomStory,
+    storyImages,
+    storyCoverPath,
+    storyImagePath,
+    photoCount,
+    photoAlt,
+    storySummary,
+    storyText,
+    communityText,
+    storyMetaChips,
+    isSaved,
+    toggleSaved,
+    readRouteStoryCode,
+    setCurrentStory,
+    updateUrl,
+    scrollToId,
+    showToast,
+    shareStory,
+    renderHeader,
+    storyCard,
+    renderSavedModal,
+    icon,
+    iconButtonLabel,
+    defaultFilters,
+    normaliseFilters
   };
 })();
